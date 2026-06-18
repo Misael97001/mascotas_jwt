@@ -43,7 +43,6 @@ public class AuthController {
 		}
 	}
 
-	// Reemplaza solo el método login:
 	@PostMapping("/login")
 	public ResponseEntity<?> login(@RequestBody Map<String, String> credenciales) {
 		String username = credenciales.get("username");
